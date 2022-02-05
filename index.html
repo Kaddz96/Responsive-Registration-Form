@@ -22,9 +22,9 @@
             <label class="top" for="full_name">Full Name</label>
             <input type="text" id="full_name" name="user_name" placeholder="Required" required> 
             <label class="top" for="email_address">Email Address</label>
-            <input type="text" id="email_address" name="user_email" placeholder="Required" required> 
+            <input type="email" id="email_address" name="user_email" placeholder="Required" required> 
             <label class="top" for="phone_number">Phone Number</label>
-            <input type="text" id="phone_number" name="user_number" placeholder="Optional"> 
+            <input type="tel" id="phone_number" name="user_number" placeholder="Optional"> 
             <label class="top" for="street_address">Street Address</label>
             <input type="text" id="street_address" name="user_address" placeholder="Optional"> 
             <label class="top" for="city">City</label>
@@ -32,6 +32,11 @@
             <label class="top" for="state">State</label>
             <select id="state" name="user_state">
                 <option value="choose_state">Choose State</option>
+                <option value="new_york">New York</option>
+                <option value="michigan">Michigan</option>
+                <option value="texas">Texas</option>
+                <option value="florida">Florida</option>
+                <option value="california">California</option>
             </select>
             <label class="top" for="zip">Zip Code</label>
             <input type="text" id="zip" name="user_zip" placeholder="Optional">
@@ -51,9 +56,9 @@
             <input type="radio" id="html_format" name="format"> 
             <label for="html_format">HTML</label> <br>
             <input type="radio" id="plain_text" name="format"> 
-            <label for="plain_text">Plain text</label> <br>
-            <p>Other topics you'd like to hear about</p>
-            <textarea></textarea><br>
+            <label for="plain_text">Plain text</label><br>
+            <label for="comments">Other topics you'd like to hear about</label>
+            <textarea id="comments" placeholder="Comment here"></textarea><br>
             <button type="submit">Sign Up</button>
         </fieldset>
     </form>

@@ -63,6 +63,8 @@ label.top {
 }
 
 input[type="text"], 
+input[type="email"],
+input[type="tel"],
 select,
 textarea {
     width: 100%;
@@ -103,6 +105,10 @@ textarea:focus {
     font-style: italic;
 }
 
+textarea::placeholder {
+    text-align: start;
+}
+
 #zip {
     width: 50%;
 }
@@ -131,6 +137,7 @@ legend {
 
 textarea {
     height: 8rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     padding: 0.5rem;
 }
